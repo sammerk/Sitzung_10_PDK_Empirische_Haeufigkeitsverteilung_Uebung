@@ -1,0 +1,183 @@
+---
+title: "Vorlesung"
+subtitle: "Forschungsmethoden"
+author: "Samuel Merk & André Epp"
+date: " `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation:
+        scroll: false
+        click: false
+        touch: true
+editor_options: 
+  chunk_output_type: console
+---
+class: center,  middle, hide_logo
+
+
+<head>
+<script src="https://kit.fontawesome.com/994a28441d.js" crossorigin="anonymous"></script>
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+<!--<div class="my-footer"><span>Folien CC-BY verfügbar unter https://atelier-phka-merk-2020.netlify.app</span></div> 
+
+
+<style>
+.remark-slide-number {
+  font-size: 10pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: red; /* white */
+  opacity: 0; /* default: 0.5 */
+}
+</style>
+--> 
+
+```{r xaringan-themer, echo=F, warning=FALSE}
+library(xaringanthemer)
+library(fontawesome)
+library(xaringanExtra)
+
+extra_css <- list(
+  ".cit"  = list("font-size" = "70%",
+                 "color" = "#6AEE3E90"),
+  ".em05" = list("font-size" ="0.5em"),
+  ".em06" = list("font-size" ="0.6em"),
+  ".em07" = list("font-size" ="0.7em"),
+  ".em08" = list("font-size" ="0.8em"),
+  ".em09" = list("font-size" ="0.9em"),
+  ".em11" = list("font-size" ="1.1em"),
+  ".em12" = list("font-size" ="1.2em"),
+  ".em13" = list("font-size" ="1.3em"),
+  ".em14" = list("font-size" ="1.4em"),
+  ".em15" = list("font-size" ="1.5em"),
+  ".em16" = list("font-size" ="1.6em"),
+  ".em17" = list("font-size" ="1.7em"),
+  ".em18" = list("font-size" ="1.8em"),
+  ".em19" = list("font-size" ="1.9em"),
+  ".bold" = list("font-weight" = "bold"),
+  ".large" = list("font-size" = "160%"),
+  ".vertmiddle" = list("vertical-align" ="middle"),
+  #".lh15" = list("line-height" =  "1.5"),
+  ".li" = list("line-height" =  "1.5",
+               "font-size" = "160%",
+               "font-weight" = "bold"),
+  ".phgreen" = list("color" = "#50B32E"),
+  ".phgreenlight" = list("color" = "#62DC3A"),
+  ".pgl" = list("color" = "#62DC3A"),
+  ".phg" = list("color" = "#8cd000"),
+ # ".my-footer" = list("background-color" = "#1a1917",
+ #                     "position" = "absolute",
+ #                     "bottom" = "0px",
+ #                     "left" = "0px",
+ #                     "height" = "20px",
+ #                     "width" = "100%"),
+  ".my-footer span" = list("font-size" = "10pt", 
+                           "color" = "#F7F8FA",
+                           "position" = "absolute",
+                           "left" = "15px",
+                           "bottom" = "2px"),
+  ".remark-slide-number" = list("bottom" = "-18px"),
+  ".li" = list("line-height" =  "4"),
+  ".scroll-box-18" = list("height" ="18em",
+                           "overflow-y" = "scroll"),
+  ".scroll-box-23" = list("height" ="23em",
+                           "overflow-y" = "scroll"),
+  ".hscroll-box-30" = list("width" ="23em",
+                           "overflow-x" = "scroll"))
+
+style_mono_accent_inverse(
+  base_color = "#8cd000",
+  white_color = "#FFFFFF",
+  black_color = "#272822",
+  extra_css = extra_css)
+
+library(xaringanExtra)
+use_logo(
+  image_url = "https://apps.samuel-merk.de/data/PHK_2018_Logo_V1_FARBE_NUR_PH.svg",
+  width = "80px",
+  position = xaringanExtra::css_position(top = "1em", right = "1em")
+)
+```
+
+
+.phg[
+# Vorlesung Forschungsmethoden
+
+<i class="fas fa-microscope fa-6x"></i>
+
+### (Software-)Übung: Empirische Häufigkeitsverteilungen
+---  
+.em14[André Epp & Samuel Merk | PH Karlsruhe]]  
+
+
+
+---
+# Advanced Organizer
+.em11[
+* Evaluation
+* Wiederholende Aufgaben (<i class="ai ai-moodle"></i>oodle) in <i class="fa fa-users"></i>
+* Ihre Fragen
+* Beispielanalysen mit dem repräsentativen Datensatz der Allgemeinen Bevölkerungsumfrage der Sozialwissenschaften (ALLBUS)
+
+
+]
+
+---
+## Evaluation:
+&nbsp;<br>&nbsp;<br>
+.large[Bitte beantworten Sie die Frage der Veranstaltungsevaluation und beziehen Sie sich dabei nur auf den von mir ausgebrachten Teil http://bit.ly/merk022.   
+Der Token lautet: __Ekvetrabag__]
+
+
+---
+class: hide_logo
+## Wiederholende Aufgaben
+.large[Bitte bearbeiten Sie die »Aufgaben für die Synchron-Sitzung« im aktuellen <i class="ai ai-moodle"></i>oodle-Abschnitt https://bit.ly/merk023.]
+--
+
+.pull-left[
+.large[
+> Methode: 🧠 - 3️⃣️ - 💬  
+]
+
+```{r, echo = F}
+library(countdown)
+countdown(minutes = 15, seconds = 00, left = 1, color_running_text = "#62DC3A")
+```
+
+]
+--
+.pull-right[
+```{r, out.width="70%", fig.align='center', echo = F, message = F}
+library(qrencoder)
+par(mar=c(0,0,0,0))
+image(qrencode_raster("http://bit.ly/merk023"), 
+      asp=1, col=c("#000000", "#62DC3A"), axes=FALSE, 
+      xlab="", ylab="", bg = 'transparent')
+```
+]
+
+---
+## Softwareübung: 
+### Empirische Häufigkeitsverteilung
+
+* Laden Sie den Querschnittsdatensatz, das Codebook und den Fragebogen des [<i class="fas fa-external-link-alt"></i> ALLBUS 2018 (Vollversion, aber nicht Kumulation, https://bit.ly/merk024)](https://www.gesis.org/allbus/download/download-querschnitte) herunter (Registrierung notwendig, wir werden den Datensatz aber noch oft nutzen)
+* Untersuchen Sie die empirische Häufigkeitsverteilung der Variable `di01a` (Nettoeinkommen) anhand klassischer Kennwerte (MW, Median, SD) und erstellen Sie ein Histogramm der Variable.
+* Suchen Sie sich eine
+    * nominale, eine
+    * ordinale und eine
+    * metrische Variable,    
+    die Sie interessiert und untersuchen Sie deren Häufigkeitsverteilung. Verschriftlichen Sie die Ergebnisse, wie Sie es auch in einer Masterarbeit machen würden.
+
