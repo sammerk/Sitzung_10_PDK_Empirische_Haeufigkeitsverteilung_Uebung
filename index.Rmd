@@ -151,7 +151,7 @@ solid black" src="https://app.wisemapping.com/c/maps/1210585/embed?zoom=1"> </if
 ---
 class: hide_logo
 ## Wiederholende Aufgaben
-.large[Bitte bearbeiten Sie die »Aufgaben für die Synchron-Sitzung« im aktuellen <i class="ai ai-moodle"></i>oodle-Abschnitt https://bit.ly/merk023.]
+.large[Bitte bearbeiten Sie die »Übungsaufgaben für die Synchron-Sitzung« im aktuellen <i class="ai ai-moodle"></i>oodle-Abschnitt https://bit.ly/merk023.]
 --
 
 .pull-left[
@@ -181,8 +181,9 @@ image(qrencode_raster("http://bit.ly/merk023"),
 ### Empirische Häufigkeitsverteilung
 
 * Laden Sie den Querschnittsdatensatz, das Codebook und den Fragebogen des [<i class="fas fa-external-link-alt"></i> ALLBUS 2018 (Vollversion, aber nicht Kumulation, https://bit.ly/merk024)](https://www.gesis.org/allbus/download/download-querschnitte) herunter (Registrierung notwendig, wir werden den Datensatz aber noch oft nutzen)
+* Öffnen Sie den Datensatz in JASP [(freier Download)](https://jasp-stats.org/download/) oder jamovi [(freier Download)](https://www.jamovi.org/download.html)
 * Untersuchen Sie die empirische Häufigkeitsverteilung der Variable `di01a` (Nettoeinkommen) anhand klassischer Kennwerte (MW, Median, SD) und erstellen Sie ein Histogramm der Variable.
-* Suchen Sie sich eine
+* Suchen Sie sich jeweils eine
     * nominale, eine
     * ordinale und eine
     * metrische Variable,    
