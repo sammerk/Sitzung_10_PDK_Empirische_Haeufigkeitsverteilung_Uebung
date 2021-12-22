@@ -126,6 +126,7 @@ use_logo(
 ---
 # Advanced Organizer
 .em11[
+* Wo stehen wir?
 * Evaluation
 * Wiederholende Aufgaben (<i class="ai ai-moodle"></i>oodle) in <i class="fa fa-users"></i>
 * Ihre Fragen
@@ -135,10 +136,16 @@ use_logo(
 ]
 
 ---
+# Wo stehen wir?
+<iframe style="width:1000px;height:450px;border: 1px
+solid black" src="https://app.wisemapping.com/c/maps/1210585/embed?zoom=1"> </iframe>
+
+
+
+---
 ## Evaluation:
 &nbsp;<br>&nbsp;<br>
-.large[Bitte beantworten Sie die Frage der Veranstaltungsevaluation und beziehen Sie sich dabei nur auf den von mir ausgebrachten Teil http://bit.ly/merk022.   
-Der Token lautet: __Ekvetrabag__]
+.large[Bitte beantworten Sie die Frage der Veranstaltungsevaluation und beziehen Sie sich dabei nur auf den von mir ausgebrachten Teil http://bit.ly/merk022]
 
 
 ---
